@@ -1,0 +1,29 @@
+# Movie Review Sentiment Analysis
+
+This project is a Python-based sentiment analysis tool that classifies movie reviews from the IMDB dataset as either 'positive' or 'negative'. It uses various Naive Bayes classifiers and evaluates their performance.
+
+## Project Overview
+
+The script performs the following steps:
+1.  Loads the IMDB movie review dataset.
+2.  Performs extensive text preprocessing, including:
+    -   Removing HTML tags.
+    -   Converting text to lowercase.
+    -   Removing special characters.
+    -   Removing common English stopwords.
+    -   Applying Porter Stemming to reduce words to their root form.
+3.  Converts the cleaned text data into numerical vectors using `CountVectorizer`.
+4.  Trains three different Naive Bayes models: **Gaussian**, **Multinomial**, and **Bernoulli**.
+5.  Evaluates each model based on Accuracy, Precision, Recall, and F1-Score.
+6.  Generates and saves visualizations comparing the models' performance.
+
+## How to Run
+
+### Prerequisites
+- Python 3.x
+- Pip (Python package installer)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/movie-review-sentiment-analysis.git
+cd movie-review-sentiment-analysis
