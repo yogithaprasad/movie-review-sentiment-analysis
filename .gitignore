@@ -1,0 +1,8 @@
+# Ignore the data folder
+data/
+
+# Ignore the generated plots folder
+output_plots/
+
+# Ignore Python's cache folder
+__pycache__/
