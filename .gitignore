@@ -5,4 +5,4 @@ data/
 output_plots/
 
 # Ignore Python's cache folder
-__pycache__/
+__pycache__/git rm -r --cached data

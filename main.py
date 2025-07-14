@@ -144,7 +144,7 @@ def main():
     # 1. Load and sample data
     df = pd.read_csv(DATA_FILE_PATH)
     df = df.sample(n=SAMPLE_SIZE, random_state=42)
-    df['sentiment'].replace({'positive': 1, 'negative': 0}, inplace=True)
+    df['sentiment'] = df['sentiment'].replace({'positive': 1, 'negative': 0})
     
     # 2. Preprocess text data
     df = preprocess_text(df)
